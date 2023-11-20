@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    margin: 0%;
+}
+
+#titulo{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}

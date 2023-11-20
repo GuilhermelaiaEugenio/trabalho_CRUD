@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    margin: 0%;
+}
+
+#titulo{
+    background-color: rgb(26, 25, 25);
+    margin: 0%;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+#container{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+#container2{
+    text-align: center;
+}
