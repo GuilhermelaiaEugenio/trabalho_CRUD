@@ -27,7 +27,7 @@
         inpEmail.value = response.data.result[0].email;
         inpUf.value = response.data.result[0].uf;
         inpSenha.value = response.data.result[0].password;
-        inpData.value  = response.data.result[0].data;
+        inpData.value  =  response.data.result[0].createdat;
     }
 
     async function inclusao(){
@@ -47,6 +47,13 @@
         }
 console.log(data);
         const response = await api.post('/createclient',data);
+
+        inpCod.value = "";
+        inpNome.value = "";
+        inpEmail.value = "";
+        inpUf.value = "";
+        inpSenha.value = "";
+        inpData.value = "";
     }
 
     async function alteracao(){
@@ -75,6 +82,13 @@ console.log(data);
 
         const response = await api.delete('/client/' + codcli);
         alert('Registro excluido!')
+
+        inpCod.value = "";
+        inpNome.value = "";
+        inpEmail.value = "";
+        inpUf.value = "";
+        inpSenha.value = "";
+        inpData.value = "";
     }
 
     async function lim(){

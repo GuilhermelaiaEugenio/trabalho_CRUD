@@ -51,6 +51,15 @@ async function inclusao(){
     }
 
     const response = await api.post('/produtos/',data);
+
+    inpCod.value = "";
+    inpNome.value = "";
+    inpDescri.value = "";
+    inpFabricante.value = "";
+    inpQtda.value = "";
+    inpPreco.value = "";
+    inpCusto.value = "";
+    inpData.value = "";
 }
 
 async function alteracao(){
@@ -80,6 +89,15 @@ async function exclusao(){
 
     const response = await api.delete('/produtos/' + cod);
     alert('Registro excluido!')
+
+    inpCod.value = "";
+    inpNome.value = "";
+    inpDescri.value = "";
+    inpFabricante.value = "";
+    inpQtda.value = "";
+    inpPreco.value = "";
+    inpCusto.value = "";
+    inpData.value = "";
 }
 
 async function lim(){
